@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register new students and manage their records easily!</p>
+    </header>
+
+    <section>
+        <h2>Register New Student</h2>
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <label for="emailID">Email ID:</label>
+            <input type="email" id="emailID" name="emailID" required>
+
+            <label for="contactNo">Contact No.:</label>
+            <input type="text" id="contactNo" name="contactNo" pattern="\d{10}" title="Enter 10-digit contact number" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Registered Students</h2>
+        <div id="studentRecords">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student records will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Student Registration System. All Rights Reserved.</p>
+        <p>Contact Us: <a href="mailto:rajmishr150@gmail.com">rajmishr150@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+18318785442">8318785442</a></p> 
+        <p>GitHub Link: <a href="https://github.com/zaalimraj/Student-Registration-System"</a> GitHub Link</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
